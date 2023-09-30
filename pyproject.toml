@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "savgol-rs"
+version = "0.1.0"
+description = ""
+authors = ["Tom Picton <tom@tompicton.com>"]
+readme = "README.md"
+packages = [{include = "savgol_rs"}]
+
+[tool.poetry.scripts]
+savgol = "savgol_rs:run"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+scipy = "^1.11.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
